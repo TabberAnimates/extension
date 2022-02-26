@@ -63,7 +63,7 @@ class CoolExtension {
   var z = args.ONE;
   console.log(z + ' is cool!');
   }
-  }
+}
 }
 
 Scratch.extensions.register(new CoolExtension());
