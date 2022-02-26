@@ -28,6 +28,18 @@ class TestExtension {
               defaultValue: '2'
             }
           }
+        },
+        {
+        opcode: 'menu',
+         blockType: Scratch.BlockType.BOOLEAN,
+         text: 'menu [DIRECTION]',
+          arguments: {
+         DIRECTION: {
+         type: Scratch.ArgumentType.STRING,
+         menu: 'buttons',
+         defaultValue: buttons.lol
+        }
+          }
         }
       ]
  menus: {
@@ -36,6 +48,7 @@ class TestExtension {
       items: ['this', 'menu', 'does', 'nothing', 'it\'\s', 'only', 'for', 'show', 'lol']
      }
   }
+}
   e() {
     return 'doo doo fart';
   }
