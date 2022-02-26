@@ -18,11 +18,11 @@ class TestExtension {
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'First value'
+              defaultValue: '2'
             },
             TWO: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Second value'
+              defaultValue: '2'
             }
           }
         }
