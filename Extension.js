@@ -9,12 +9,10 @@ class TestExtension {
         {
           opcode: 'e',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: 'e',
-            }
-          }  
+          text: 'e'
         }
       ]
-    };
+    }
   }
   e() {
     return 'doo doo fart';
