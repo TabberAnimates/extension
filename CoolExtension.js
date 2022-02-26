@@ -32,7 +32,19 @@ class CoolExtension {
         opcode: 'sadIcon',
         blockType: Scratch.BlockType.COMMAND,
         text: 'When you made the extension sad :('
-        }
+        },
+        {
+          opcode: 'CoOl',
+          blockType: Scratch.BlockType.COMMAND,
+          text: '[ONE] is cool B)',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'Jeff Bezos'
+            }
+            }
+          }
+        },
       ]
     };
   }
@@ -47,6 +59,9 @@ class CoolExtension {
   sadIcon() {
   console.clear();
   console.log('You just made the extension sad :( You should be ashamed of yourself.')
+  }
+  CoOl(args) {
+  console.log(args.ONE + 'is cool!');
   }
 }
 
