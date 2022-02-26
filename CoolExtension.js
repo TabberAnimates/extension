@@ -65,7 +65,7 @@ class CoolExtension {
         {
           opcode: 'notEquals',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '[ONE] != [TWO]',
+          text: '[ONE] ≠ [TWO]',
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.NUMBER,
