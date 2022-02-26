@@ -88,7 +88,7 @@ if (w == 9) {
          } else {
            return 'yes';
        } 
-    },
+  }
   sign(args) {
   var v = args.ONE;
   return Math.sign(v);
