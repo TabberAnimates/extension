@@ -27,7 +27,7 @@ class TestExtension {
     return 'doo doo fart';
   }
   leopard() {
-    yield* this.playSoundUntilDone(what);
+    yield* this.playSoundUntilDone('what');
   }
 }
 
