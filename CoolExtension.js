@@ -61,6 +61,21 @@ class CoolExtension {
               defaultValue: '-1'
             }
           }
+        },
+        {
+          opcode: 'notEquals',
+          blockType: Scratch.BlockType.REPORTER,
+          text: '[ONE] != [TWO]',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: '50'
+            }, 
+              TWO: {
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: ''
+            }
+          }
         }
       ]
     };
@@ -92,6 +107,11 @@ if (w == 9) {
   sign(args) {
   var v = args.ONE;
   return Math.sign(v);
+  }
+  notEquals(args){
+    var one = args.ONE;
+    var two = args.TWO;
+    return one != two;
   }
 }
 
