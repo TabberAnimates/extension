@@ -45,7 +45,7 @@ class CoolExtension {
     return Math.pow(x, y);
   }
   sadIcon() {
-  document.write("You made the Cool Extension very sad :( He is pouting in his room now. Bad dog.");
+  document.write("You made the Cool Extension very sad :( He is pouting in his room now. Bad dog");
   }
 }
 
