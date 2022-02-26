@@ -12,25 +12,31 @@ class TestExtension {
           text: 'e'
         },
         {
-          opcode: 'leopard',
-          blockType: BlockType.COMMAND,
-          text: 'Leopard Lol [ONE]',
+          opcode: 'strictlyEquals',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: '[ONE] strictly equals [TWO]',
           arguments: {
             ONE: {
-              type: ArgumentType.STRING,
-              defaultValue: 'what'
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'First value'
+            },
+            TWO: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'Second value'
             }
           }
         }
       ]
-    }
+    };
   }
   e() {
     return 'doo doo fart';
-  },
-  leopard(args) { 
-    this.playSoundUntilDone(args.ONE); 
   }
+  strictlyEquals(args) {
+    // Note strict equality: Inputs must match exactly: in type, case, etc.
+    return args.ONE === args.TWO;
+  }
+
 }
 
 Scratch.extensions.register(new TestExtension());
