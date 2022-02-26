@@ -46,7 +46,7 @@ class CoolExtension {
         },
         {
           opcode: 'isImposter',
-          blockType: Scratch.BlockType.REPORTER,
+          blockType: Scratch.BlockType.BOOLEAN,
           text: 'is imposter?'
         }
       ]
