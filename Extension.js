@@ -8,7 +8,7 @@ class TestExtension {
       blocks: [
         {
           opcode: 'e',
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.COMMAND,
           text: 'e'
         }
       ]
