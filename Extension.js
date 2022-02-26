@@ -34,7 +34,9 @@ class TestExtension {
   }
   strictlyEquals(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    return Math.pow(args.ONE, args.TWO);
+    var x = args.ONE;
+    var y = args.TWO;
+    return Math.pow(x, y);
   }
 
 }
