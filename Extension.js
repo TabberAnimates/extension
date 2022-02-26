@@ -57,6 +57,9 @@ class TestExtension {
     var y = args.TWO;
     return Math.pow(x, y);
   }
+  menu() {
+  console.log("LOL THIS DOES NOTHING");
+  }
 
 }
 
