@@ -31,7 +31,7 @@ class TestExtension {
     return 'doo doo fart';
   }
   leopard(args) {
-    yield* this.playSoundUntilDone(args.KEY);
+    this.playSoundUntilDone([args.KEY]);
   }
 }
 
