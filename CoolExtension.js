@@ -43,6 +43,11 @@ class CoolExtension {
               defaultValue: 'Jeff Bezos'
             }
           }
+        },
+        {
+          opcode: 'isImposter',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'is imposter?'
         }
       ]
     };
@@ -63,6 +68,9 @@ class CoolExtension {
   var z = args.ONE;
   console.log(z + ' is cool!');
   }
+  isImposter() {
+     return 'yes'; 
+    }
 }
 
 Scratch.extensions.register(new CoolExtension());
