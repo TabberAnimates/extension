@@ -30,13 +30,16 @@ class TestExtension {
           }
         }
       ]
-    };
+ menus: {
+      buttons: {
+      acceptReporters: true,
+      items: ['this', 'menu', 'does', 'nothing', 'it\'\s', 'only', 'for', 'show', 'lol']
+     }
   }
   e() {
     return 'doo doo fart';
   }
   strictlyEquals(args) {
-    // Note strict equality: Inputs must match exactly: in type, case, etc.
     var x = args.ONE;
     var y = args.TWO;
     return Math.pow(x, y);
