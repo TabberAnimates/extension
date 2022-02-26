@@ -29,7 +29,7 @@ class TestExtension {
     return 'doo doo fart';
   },
   leopard(args) { 
-    this.playSoundUntilDone([args.ONE]); 
+    this.playSoundUntilDone(args.ONE); 
   }
 }
 
