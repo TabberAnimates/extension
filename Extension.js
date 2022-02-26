@@ -30,15 +30,15 @@ class TestExtension {
           }
         },
         {
-        opcode: 'menu',
-         blockType: Scratch.BlockType.BOOLEAN,
-         text: 'menu [DIRECTION]',
+          opcode: 'menu',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'menu [ONE]',
           arguments: {
-         DIRECTION: {
-         type: Scratch.ArgumentType.STRING,
-         menu: 'buttons',
-         defaultValue: buttons.lol
-        }
+            ONE: {
+              type: Scratch.ArgumentType.STRING,
+              menu: 'buttons',
+              defaultValue: buttons.lol
+            }
           }
         }
       ]
