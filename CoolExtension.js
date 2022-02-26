@@ -61,17 +61,6 @@ class CoolExtension {
               defaultValue: '-1'
             }
           }
-        },
-        {
-          opcode: 'alert',
-          blockType: Scratch.BlockType.COMMAND,
-          text: 'alert [ONE]',
-          arguments: {
-            ONE: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'I am an alert box!'
-            }
-          }
         }
       ]
     };
@@ -103,10 +92,6 @@ if (w == 9) {
   sign(args) {
   var v = args.ONE;
   return Math.sign(v);
-  }
-  alert(args) {
-  var u = args.ONE;
-  alert(u + "");
   }
 }
 
