@@ -61,7 +61,7 @@ class CoolExtension {
   }
   CoOl(args) {
   var z = args.ONE;
-  console.log(z + 'is cool!');
+  console.log(z + ' is cool!');
   }
 }
 
