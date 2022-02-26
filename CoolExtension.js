@@ -61,7 +61,8 @@ class CoolExtension {
   console.log('You just made the extension sad :( You should be ashamed of yourself.')
   }
   CoOl(args) {
-  console.log(args.ONE + 'is cool!');
+  var z = args.ONE;
+  console.log(z + 'is cool!');
   }
 }
 
