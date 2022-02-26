@@ -7,8 +7,8 @@ class CoolExtension {
       id: 'myextensionexample',
       name: 'Cool Extension',
       blockIconURI: blockIconURI,
-      color1: '#ffe326',
-      color2: '#ffe326',
+      color1: '#ffae26',
+      color2: '#ffae26',
       blocks: [
         {
           opcode: 'e',
