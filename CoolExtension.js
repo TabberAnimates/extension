@@ -19,11 +19,11 @@ class CoolExtension {
           text: '[ONE] to the power of [TWO]',
           arguments: {
             ONE: {
-              type: Scratch.ArgumentType.STRING,
+              type: Scratch.ArgumentType.NUMBER,
               defaultValue: '2'
             },
             TWO: {
-              type: Scratch.ArgumentType.STRING,
+              type: Scratch.ArgumentType.NUMBER,
               defaultValue: '2'
             }
           }
