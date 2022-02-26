@@ -100,7 +100,7 @@ class CoolExtension {
             }
           }
         }
-      ]
+      ],
     menus: {
     lol: {
     acceptReporters: true,
