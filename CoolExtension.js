@@ -4,7 +4,7 @@ const blockIconURI = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAADpCAYA
 class CoolExtension {
   getInfo() {
     return {
-      id: 'myextensionexample',
+      id: 'coolextension',
       name: 'Cool Extension',
       blockIconURI: blockIconURI,
       color1: '#ffae26',
@@ -50,6 +50,17 @@ class CoolExtension {
           opcode: 'isImposter',
           blockType: Scratch.BlockType.REPORTER,
           text: 'is imposter?'
+        },
+        {
+          opcode: 'sign',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'sign of [ONE]',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: '-1'
+            }
+          }
         }
       ]
     };
@@ -72,12 +83,16 @@ class CoolExtension {
   }
   isImposter() {
      var w = Math.floor(Math.random() * 10) + 1;
-     if (w == 9) {
-     return 'no';
-   } else {
-     return 'yes';
-} 
-    }
+if (w == 9) {
+   return 'no';
+         } else {
+           return 'yes';
+       } 
+    },
+  sign(args) {
+  var v = args.ONE;
+  return Math.sign(v);
+  }
 }
 
 Scratch.extensions.register(new CoolExtension());
