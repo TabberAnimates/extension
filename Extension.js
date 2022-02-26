@@ -9,13 +9,25 @@ class TestExtension {
         {
           opcode: 'e',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: 'e'
+          text: 'e',
+          opcode: 'leopard',
+          blockType: Scratch.Blocktype.COMMAND,
+          text: 'Leopard Test [what]',
+          arguments: {
+            what: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'First value',
+            }
+          }  
         }
       ]
     };
   }
   e() {
     return 'doo doo fart';
+  }
+  leopard() {
+    yield* this.playSoundUntilDone(what);
   }
 }
 
