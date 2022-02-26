@@ -87,7 +87,12 @@ class CoolExtension {
               defaultValue: 'alert("I executed Javascript code!")'
             }
           }
-        }
+        },
+        {
+          opcode: 'millisecond',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'millisecond'
+        },
       ]
     };
   }
@@ -128,8 +133,10 @@ if (w == 9) {
   var one = args.ONE;
   eval(one);
   }
-  what() {
-  console.log('what?')
+  millisecond() {
+  const d = new Date();
+  let ms = d.getMilliseconds();
+  return ms;
   }
 }
 
