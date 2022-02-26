@@ -28,18 +28,6 @@ class TestExtension {
               defaultValue: '2'
             }
           }
-        },
-        {
-          opcode: 'menu',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'menu [ONE]',
-          arguments: {
-            ONE: {
-              type: Scratch.ArgumentType.STRING,
-              menu: 'buttons',
-              defaultValue: buttons.lol
-            }
-          }
         }
       ]
  menus: {
