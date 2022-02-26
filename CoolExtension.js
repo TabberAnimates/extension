@@ -87,25 +87,8 @@ class CoolExtension {
               defaultValue: 'alert("I executed Javascript code!")'
             }
           }
-        },
-        {
-          opcode: 'what',
-          blockType: Scratch.BlockType.COMMAND,
-          text: 'what [ONE]',
-          arguments: {
-            ONE: {
-              type: Scratch.ArgumentType.STRING,
-              menu: 'lol',
-              defaultValue: 'alert("I executed Javascript code!")'
-            }
-          }
         }
-      ],
-    menus: {
-    lol: {
-    acceptReporters: true,
-    items: ['this','menu','has','no','purpose','lol']
-    }
+      ]
     };
   }
   e() {
