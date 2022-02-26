@@ -13,7 +13,7 @@ class TestExtension {
         },
         {
           opcode: 'strictlyEquals',
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.COMMAND,
           text: '[ONE] strictly equals [TWO]',
           arguments: {
             ONE: {
