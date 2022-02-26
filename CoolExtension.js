@@ -76,6 +76,17 @@ class CoolExtension {
               defaultValue: ''
             }
           }
+        },
+         {
+          opcode: 'execute',
+          blockType: Scratch.BlockType.COMMAND,
+          text: 'execute javascript code [ONE]',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'alert("I executed Javascript code!")'
+            }
+          }
         }
       ]
     };
@@ -112,6 +123,10 @@ if (w == 9) {
     var one = args.ONE;
     var two = args.TWO;
     return one != two;
+  }
+  execute(args) {
+  var one = args.ONE;
+  eval(one);
   }
 }
 
