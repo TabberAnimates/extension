@@ -45,6 +45,7 @@ class CoolExtension {
     return Math.pow(x, y);
   }
   sadIcon() {
+  console.clear();
   console.log('You just made the extension sad :( You should be ashamed of yourself.')
   }
 }
