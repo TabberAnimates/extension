@@ -43,6 +43,11 @@ class CoolExtension {
               defaultValue: 'Jeff Bezos'
             }
           }
+        },
+        {
+          opcode: 'isImposter',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: 'is imposter?'
         }
       ]
     };
