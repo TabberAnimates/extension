@@ -42,7 +42,6 @@ class CoolExtension {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'Jeff Bezos'
             }
-            }
           }
         }
       ]
