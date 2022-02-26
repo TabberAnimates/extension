@@ -16,7 +16,7 @@ class TestExtension {
           blockType: BlockType.COMMAND,
           text: 'Leopard Lol [ONE]',
           arguments: {
-            KEY: {
+            ONE: {
               type: ArgumentType.STRING,
               defaultValue: 'what'
             }
