@@ -64,6 +64,5 @@ class CoolExtension {
   console.log(z + ' is cool!');
   }
 }
-}
 
 Scratch.extensions.register(new CoolExtension());
