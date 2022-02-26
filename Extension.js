@@ -17,9 +17,6 @@ class TestExtension {
   e() {
     return 'doo doo fart';
   }
-  leopard(args) {
-    this.playSoundUntilDone([args.KEY]);
-  }
 }
 
 Scratch.extensions.register(new TestExtension());
