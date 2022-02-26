@@ -13,12 +13,15 @@ class TestExtension {
         },
         { 
           opcode: 'leopard', 
-          text: 'Leopard Lol [KEY]', 
+          text: 'Leopard Lol [ONE]', 
           blockType: BlockType.COMMAND, 
           arguments: { 
             KEY: { 
               type: ArgumentType.STRING,
-              defaultValue: 'what' } } };
+              defaultValue: 'what' 
+            } 
+          } 
+        }
       ]
     }
   }
@@ -26,7 +29,7 @@ class TestExtension {
     return 'doo doo fart';
   },
   leopard(args) { 
-    this.playSoundUntilDone([args.KEY]); 
+    this.playSoundUntilDone([args.ONE]); 
   }
 }
 
