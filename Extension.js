@@ -6,6 +6,7 @@ class TestExtension {
     return {
       id: 'testextension',
       name: 'Cool Extension',
+      blockIconURI: blockIconURI,
 
       blocks: [
         {
