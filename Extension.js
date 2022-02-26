@@ -13,8 +13,8 @@ class TestExtension {
         },
         {
           opcode: 'strictlyEquals',
-          blockType: Scratch.BlockType.COMMAND,
-          text: '[ONE] strictly equals [TWO]',
+          blockType: Scratch.BlockType.REPORTER,
+          text: '[ONE] to the power of [TWO]',
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.STRING,
@@ -34,7 +34,7 @@ class TestExtension {
   }
   strictlyEquals(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    return args.ONE === args.TWO;
+    return args.ONE ^ args.TWO;
   }
 
 }
