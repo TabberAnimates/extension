@@ -105,8 +105,8 @@ if (w == 9) {
   return Math.sign(v);
   }
   alert(args) {
-  var u = args.ONE;
-  alert("u");
+  var u = args.One;
+  alert(u + "");
   }
 }
 
