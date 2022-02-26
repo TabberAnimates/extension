@@ -11,16 +11,16 @@ class TestExtension {
           blockType: Scratch.BlockType.BOOLEAN,
           text: 'e'
         },
-        { 
-          opcode: 'leopard', 
-          text: 'Leopard Lol [ONE]', 
-          blockType: BlockType.COMMAND, 
-          arguments: { 
-            KEY: { 
+        {
+          opcode: 'leopard',
+          blockType: BlockType.COMMAND,
+          text: 'Leopard Lol [ONE]',
+          arguments: {
+            KEY: {
               type: ArgumentType.STRING,
-              defaultValue: 'what' 
-            } 
-          } 
+              defaultValue: 'what'
+            }
+          }
         }
       ]
     }
