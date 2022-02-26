@@ -69,7 +69,13 @@ class CoolExtension {
   console.log(z + ' is cool!');
   }
   isImposter() {
-    return 'yes';
+    var w = Math.floor(Math.random() * 10) + 1;
+    if (w === 9) {
+    return 'no';
+    } else {
+     return 'yes'; 
+    }
+    }
   }
 }
 
