@@ -12,9 +12,9 @@ class TestExtension {
           text: 'e',
           opcode: 'leopard',
           blockType: Scratch.Blocktype.COMMAND,
-          text: 'Leopard Test [what]',
+          text: 'Leopard Test [ONE]',
           arguments: {
-            what: {
+            ONE: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'First value',
             }
@@ -27,7 +27,7 @@ class TestExtension {
     return 'doo doo fart';
   }
   leopard() {
-    yield* this.playSoundUntilDone('what');
+    yield* this.playSoundUntilDone(ONE);
   }
 }
 
