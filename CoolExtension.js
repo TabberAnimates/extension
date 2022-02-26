@@ -46,7 +46,7 @@ class CoolExtension {
         },
         {
           opcode: 'isImposter',
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.REPORTER,
           text: 'is imposter?'
         }
       ]
@@ -69,12 +69,7 @@ class CoolExtension {
   console.log(z + ' is cool!');
   }
   isImposter() {
-    var w = Math.floor(Math.random() * 10) + 1;
-    if (w === 9) {
-    return 'no';
-    } else {
      return 'yes'; 
-    }
     }
   }
 }
