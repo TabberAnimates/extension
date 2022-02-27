@@ -144,9 +144,10 @@ if (w == 9) {
   return ms;
   }
   ip() {
-  $.getJSON('http://ipinfo.io', ip(data){
-    return data;
-    });
+    fetch('https://api.ipify.org/?format=json')
+    .then(results => results.json())
+    .then(data => var ip = data.ip);
+    return ip;
   }
 }
 
