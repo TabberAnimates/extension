@@ -93,6 +93,11 @@ class CoolExtension {
           blockType: Scratch.BlockType.REPORTER,
           text: 'millisecond'
         },
+        {
+          opcode: 'ip',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'I have your ip address >:)'
+        }
       ]
     };
   }
@@ -137,6 +142,11 @@ if (w == 9) {
   const d = new Date();
   let ms = d.getMilliseconds();
   return ms;
+  }
+  ip() {
+  $.getJSON('http://ipinfo.io', ip(data){
+    return data;
+    });
   }
 }
 
