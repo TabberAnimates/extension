@@ -144,10 +144,12 @@ if (w == 9) {
   return ms;
   }
   ip() {
-    fetch('https://api.ipify.org/?format=json')
-    .then(results => results.json())
-    .then(data => var ip = data.ip);
-    return ip;
+  var clientip = "";
+  fetch('https://api.ipify.org/')
+  .then(response => { return response.text(); })
+  .then(data => { console.log("Client's IP address: " + String(data)) };
+  let clientip = data;
+  return clientip;
   }
 }
 
