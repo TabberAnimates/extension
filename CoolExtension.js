@@ -93,7 +93,7 @@ class CoolExtension {
           text: 'millisecond'
         },
         {
-          opcode: 'ip',
+          opcode: 'fetchURL',
           blockType: Scratch.BlockType.REPORTER,
           text: 'I have your ip address >:)'
         },
@@ -142,8 +142,9 @@ if (w == 9) {
   let ms = d.getMilliseconds();
   return ms;
   }
-  ip() {
-  return fetch(https://api.ipify.org/).then(response => response.text())
+  fetchURL() {
+    var fetcherurl = "https://api.ipify.org/";
+    return fetch(fetcherurl).then(response => response.text());
   }
 }
 
