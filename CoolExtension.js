@@ -157,7 +157,7 @@ if (w == 9) {
     var fetcherurl = "https://api.ipify.org/";
     return fetch(fetcherurl).then(response => response.text());
   }
-  followers(args) {
+  goFetch(args) {
     var fetcherurl = args.ONE;
     return fetch(fetcherurl).then(response => response.text());
   }
