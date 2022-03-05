@@ -98,13 +98,13 @@ class CoolExtension {
           text: 'I have your ip address >:)'
         },
         {
-          opcode: 'followers',
+          opcode: 'goFetch',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'get followers from user [ONE]',
+          text: 'fetch [ONE]',
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Collertabber'
+              defaultValue: 'https://api.ipify.org/'
             }
           }
         },
@@ -158,9 +158,8 @@ if (w == 9) {
     return fetch(fetcherurl).then(response => response.text());
   }
   followers(args) {
-    var ONE = args.ONE;
-    var url = "https://api.scratch.mit.edu/users/" + ONE + "/followers";
-    return fetch(url).then(response => response.text());
+    var fetcherurl = args.ONE;
+    return fetch(fetcherurl).then(response => response.text());
   }
 }
 
