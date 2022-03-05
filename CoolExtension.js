@@ -158,8 +158,9 @@ if (w == 9) {
     return fetch(fetcherurl).then(response => response.text());
   }
   followers(args) {
-    var api = "https://api.scratch.mit.edu/users/" + args.ONE + "/followers";
-    return get api.then(response => response.text());
+    var ONE = args.ONE;
+    var url = "https://api.scratch.mit.edu/users/" + ONE + "/followers";
+    return fetch(url).then(response => response.text());
   }
 }
 
