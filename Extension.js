@@ -29,7 +29,7 @@ class TestExtension {
             }
           }
         }
-      ]
+      ],
  menus: {
       buttons: {
       acceptReporters: true,
