@@ -152,7 +152,22 @@ class CoolExtension {
           defaultValue: 6,
             }
           }
-        }
+        },
+        {
+          opcode: 'startsWith',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: '[ONE] starts with [TWO]?',
+          arguments: {
+          ONE: {
+          type: Scratch.ArgumentType.STRING,
+          defaultValue: 'Hello there!',
+         },
+            TWO: {
+            type: Scratch.ArgumentType.STRING,
+            defaultValue: 'Hello',
+            }
+          }
+       },
       ]
     };
   }
@@ -220,6 +235,10 @@ if (w == 9) {
   let text = args.ONE;
   let result = text.repeat(args.TWO);
   return result;
+  }
+  startsWith(args) {
+  let text = args.ONE;
+  return text.startsWith(args.TWO);
   }
 }
 
