@@ -130,7 +130,7 @@ class CoolExtension {
         {
           opcode: 'typeOf',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'if [ONE] then [TWO] else [THREE]',
+          text: 'type of [ONE]',
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.STRING,
