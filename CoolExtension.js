@@ -115,15 +115,15 @@ class CoolExtension {
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.BOOLEAN,
-              defaultValue: '50'
+              defaultValue: ''
             }, 
               TWO: {
               type: Scratch.ArgumentType.NUMBER,
-              defaultValue: ''
+              defaultValue: 'true'
             },
             THREE: {
               type: Scratch.ArgumentType.NUMBER,
-              defaultValue: ''
+              defaultValue: 'false'
             }
           }
         }
