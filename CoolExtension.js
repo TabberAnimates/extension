@@ -138,6 +138,21 @@ class CoolExtension {
             }
           }
         },
+        {
+          opcode: 'repeatText',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'repeat text [ONE] [TWO] times',
+          arguments: {
+          ONE: {
+          type: Scratch.ArgumentType.STRING,
+          defaultValue: 'This is Cool '
+            },
+          TWO: {
+          type: Scratch.ArgumentType.NUMBER,
+          defaultValue: 6,
+            }
+          }
+        }
       ]
     };
   }
@@ -200,6 +215,11 @@ if (w == 9) {
   }
   typeOf(args) {
   return typeof args.ONE;
+  }
+  repeatText(args) {
+  let text = args.ONE;
+  let result = text.repeat(args.TWO);
+  return result;
   }
 }
 
