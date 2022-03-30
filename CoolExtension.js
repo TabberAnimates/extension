@@ -141,18 +141,18 @@ class CoolExtension {
         {
           opcode: 'counter',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'counter',
+          text: 'counter'
         },
-         {
+        {
           opcode: 'incrCounter',
           blockType: Scratch.BlockType.COMMAND,
-          text: 'increment counter',
+          text: 'increment counter'
         },
         {
           opcode: 'resetCounter',
           blockType: Scratch.BlockType.COMMAND,
-          text: 'reset counter',
-        },
+          text: 'reset counter'
+        }
       ]
     };
   }
@@ -217,7 +217,7 @@ if (w == 9) {
   return typeof args.ONE;
   }
   counter() {
-  var counter
+  var counter;
   return counter;
   }
   incrCounter() {
