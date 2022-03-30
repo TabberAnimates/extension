@@ -181,10 +181,10 @@ if (w == 9) {
     return fetch(fetcherurl).then(response => response.text());
   }
   ifReport(args) {
-    if args.ONE {
+    if (args.ONE) {
     return args.TWO;
     } else {
-    return args.THREE
+    return args.THREE;
     }
   }
 }
