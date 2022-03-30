@@ -138,21 +138,6 @@ class CoolExtension {
             }
           }
         },
-        {
-          opcode: 'counter',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'counter'
-        },
-        {
-          opcode: 'incrCounter',
-          blockType: Scratch.BlockType.COMMAND,
-          text: 'increment counter'
-        },
-        {
-          opcode: 'resetCounter',
-          blockType: Scratch.BlockType.COMMAND,
-          text: 'reset counter'
-        }
       ]
     };
   }
@@ -215,16 +200,6 @@ if (w == 9) {
   }
   typeOf(args) {
   return typeof args.ONE;
-  }
-  counter() {
-  var counter;
-  return counter;
-  }
-  incrCounter() {
-  let counter = ++1;
-  }
-  resetCounter() {
-  let counter = 0;
   }
 }
 
