@@ -127,6 +127,17 @@ class CoolExtension {
             }
           }
         },
+        {
+          opcode: 'typeOf',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'if [ONE] then [TWO] else [THREE]',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'true'
+            }
+          }
+        },
       ]
     };
   }
@@ -186,6 +197,9 @@ if (w == 9) {
     } else {
     return args.THREE;
     }
+  }
+  typeOf(args) {
+  return typeof args.ONE;
   }
 }
 
