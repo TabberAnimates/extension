@@ -110,7 +110,7 @@ class CoolExtension {
         },
         {
           opcode: 'ifReport',
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.REPORTER,
           text: 'if [ONE] then [TWO] else [THREE]',
           arguments: {
             ONE: {
@@ -118,11 +118,11 @@ class CoolExtension {
               defaultValue: ''
             }, 
               TWO: {
-              type: Scratch.ArgumentType.NUMBER,
+              type: Scratch.ArgumentType.STRING,
               defaultValue: 'true'
             },
             THREE: {
-              type: Scratch.ArgumentType.NUMBER,
+              type: Scratch.ArgumentType.STRING,
               defaultValue: 'false'
             }
           }
