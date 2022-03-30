@@ -126,7 +126,12 @@ class CoolExtension {
               defaultValue: 'false'
             }
           }
-        }
+        },
+         {
+          opcode: 'cBlockTest',
+          blockType: Scratch.BlockType.C,
+          text: 'cool',
+         }
       ]
     };
   }
@@ -185,6 +190,10 @@ if (w == 9) {
     return args.TWO;
     } else {
     return args.THREE;
+    }
+    }
+    cBlockTest(args) {
+    return 'ok';
     }
   }
 }
