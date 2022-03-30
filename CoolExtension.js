@@ -108,6 +108,25 @@ class CoolExtension {
             }
           }
         },
+        {
+          opcode: 'ifReport',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: 'if [ONE] then [TWO] else [THREE]',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.BOOLEAN,
+              defaultValue: '50'
+            }, 
+              TWO: {
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: ''
+            },
+            THREE: {
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: ''
+            }
+          }
+        }
       ]
     };
   }
@@ -160,6 +179,13 @@ if (w == 9) {
   goFetch(args) {
     var fetcherurl = args.ONE;
     return fetch(fetcherurl).then(response => response.text());
+  }
+  ifReport(args) {
+    if args.ONE {
+    return args.TWO;
+    } else {
+    return args.THREE
+    }
   }
 }
 
