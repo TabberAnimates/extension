@@ -171,11 +171,15 @@ class CoolExtension {
         {
           opcode: 'percentage',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'percentage for [ONE]',
+          text: 'percentage for [ONE] in [TWO]',
           arguments: {
           ONE: {
           type: Scratch.ArgumentType.NUMBER,
           defaultValue: 25,
+          },
+          TWO: {
+          type: Scratch.ArgumentType.NUMBER,
+          defaultValue: 100,
           }
         }
       }
@@ -252,8 +256,7 @@ if (w == 9) {
   return text.startsWith(args.TWO);
   }
   percentage(args) {
-   var z = args.ONE;
-    return z / 100 ;
+  return ((args.ONE/ 100) * args.TWO).toFixed(2) + "%";
 } 
 }
 
