@@ -253,7 +253,7 @@ if (w == 9) {
   return text.startsWith(args.TWO);
   }
   percentage(args) {
-   return args.ONE / 100 + "%";
+   return args.ONE / 100;
 } 
 }
 
