@@ -176,10 +176,7 @@ class CoolExtension {
           ONE: {
           type: Scratch.ArgumentType.NUMBER,
           defaultValue: 25,
-          },
-          TWO: {
-          type: Scratch.ArgumentType.NUMBER,
-          defualtValue: 100,
+          }
           }
         }
       }
@@ -256,7 +253,7 @@ if (w == 9) {
   return text.startsWith(args.TWO);
   }
   percentage(args) {
-   return (100 * args.ONE) / args.TWO;
+   return args.ONE / 100 + "%";
 } 
 }
 
