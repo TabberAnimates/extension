@@ -168,6 +168,17 @@ class CoolExtension {
             }
           }
        },
+        {
+          opcode: 'factorialize',
+          blocktype: Scratch.BlockType.REPORTER,
+          text: 'factorialize [ONE]',
+          arguments: {
+          ONE: {
+          type: Scratch.ArgumentType.NUMBER,
+          defaultValue: '5',
+          }
+         }
+        }
       ]
     };
   }
@@ -239,6 +250,15 @@ if (w == 9) {
   startsWith(args) {
   let text = args.ONE;
   return text.startsWith(args.TWO);
+  }
+  factorialize(args) {
+  let value = args.ONE;
+  let result = 0;
+  while (value > 0) {
+  let result = ++value;
+  let value = --1;
+  }
+  return result;
   }
 }
 
