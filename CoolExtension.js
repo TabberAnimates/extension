@@ -169,19 +169,23 @@ class CoolExtension {
           }
        },
         {
-          opcode: 'factorialize',
-          blocktype: Scratch.BlockType.REPORTER,
-          text: 'factorialize [ONE]',
+          opcode: 'percentage',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'percentage for [ONE] in [TWO]',
           arguments: {
           ONE: {
           type: Scratch.ArgumentType.NUMBER,
-          defaultValue: '5',
+          defaultValue: 25,
+          },
+          TWO: {
+          type: Scratch.ArgumentType.NUMBER,
+          defualtValue: 100,
           }
-         }
         }
-      ]
-    };
-  }
+      }
+    ]
+  };
+}
   e() {
     return 'doo doo fart';
   }
@@ -251,15 +255,9 @@ if (w == 9) {
   let text = args.ONE;
   return text.startsWith(args.TWO);
   }
-  factorialize(args) {
-  let value = args.ONE;
-  let result = 0;
-  while (value > 0) {
-  let result = ++value;
-  let value = --1;
-  }
-  return result;
-  }
+  percentage(args) {
+   return (100 * args.ONE) / args.TWO;
+} 
 }
 
 Scratch.extensions.register(new CoolExtension());
