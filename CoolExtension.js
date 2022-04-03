@@ -177,9 +177,8 @@ class CoolExtension {
           type: Scratch.ArgumentType.NUMBER,
           defaultValue: 25,
           }
-          }
         }
-      },
+      }
     ]
   };
 }
@@ -253,8 +252,8 @@ if (w == 9) {
   return text.startsWith(args.TWO);
   }
   percentage(args) {
-   var a = args.ONE;
-    return (a / 100);
+   var z = args.ONE;
+    return z / 100 ;
 } 
 }
 
