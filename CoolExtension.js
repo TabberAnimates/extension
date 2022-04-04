@@ -182,8 +182,24 @@ class CoolExtension {
           defaultValue: 100,
           }
         }
+      },
+        {
+        opcode: 'rickroll',
+        blockType: Scratch.BlockType.BOOLEAN,
+        text: 'test for [MENU]',
+        arguments: {
+        MENU: {
+        type: Scratch.ArgumentType.NUMBER,
+        menu: 'rickMenu'
+        }
+        }
+        }
+    ],
+      menus: {
+        rickMenu: {
+            items: ['never', 'gonna', 'give', 'you', 'up']
       }
-    ]
+    }
   };
 }
   e() {
@@ -256,8 +272,11 @@ if (w == 9) {
   return text.startsWith(args.TWO);
   }
   percentage(args) {
-  return ((args.ONE/ 100) * args.TWO).toFixed(2) + "%";
-} 
+  return ((args.ONE/ 100) * args.TWO).toFixed(2);
+}
+  rickroll(args) {
+  return args.MENU;
+  }
 }
 
 Scratch.extensions.register(new CoolExtension());
