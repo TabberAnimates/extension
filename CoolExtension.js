@@ -276,10 +276,7 @@ if (w == 9) {
 }
   rickroll(args) {
   var menu = args.MENU;
-  if (menu = 1) {
-  return "Hellow World!";
-    
-  }
+  return menu;
   }
 }
 
