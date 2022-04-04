@@ -276,7 +276,7 @@ if (w == 9) {
 }
   rickroll(args) {
   var menu = args.MENU;
-  return menu;
+  return 'false';
   }
 }
 
