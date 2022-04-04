@@ -72,7 +72,7 @@ class CoolExtension {
             }, 
               TWO: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: ''
+              defaultValue: '0'
             }
           }
         },
