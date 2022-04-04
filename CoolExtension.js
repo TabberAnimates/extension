@@ -276,16 +276,9 @@ if (w == 9) {
 }
   rickroll(args) {
   var menu = args.MENU;
-  if (menu = 'Women') {
-  return 'No Women?';
-  } else if (menu = 'A Perfect Person') {
-  return 'No bodie\'\s perfect kid.';
-  } else if (menu = 'A Celebrity Near You') {
-  return 'No one\'\s there to sign your autograph :('
-  } else if (menu = 'Minecraft for Free') {
-  return 'Stop being a pirate MaTeY!';
-  } else if (menu = 'Free Robux') {
-  return 'Scams. Scams Everywhere.';
+  if (menu = 1) {
+  return "Hellow World!";
+    
   }
   }
 }
