@@ -67,11 +67,11 @@ class CoolExtension {
           text: '[ONE] ≠ [TWO]',
           arguments: {
             ONE: {
-              type: Scratch.ArgumentType.NUMBER,
+              type: Scratch.ArgumentType.STRING,
               defaultValue: '50'
             }, 
               TWO: {
-              type: Scratch.ArgumentType.NUMBER,
+              type: Scratch.ArgumentType.STRING,
               defaultValue: ''
             }
           }
