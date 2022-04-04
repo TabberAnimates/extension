@@ -197,7 +197,7 @@ class CoolExtension {
     ],
       menus: {
         rickMenu: {
-            items: ['never', 'gonna', 'give', 'you', 'up']
+            items: ['Women', 'A Perfect Person', 'A Celebrity Near You', 'Minecraft for Free', 'Free Robux']
       }
     }
   };
@@ -275,7 +275,18 @@ if (w == 9) {
   return ((args.ONE/ 100) * args.TWO).toFixed(2);
 }
   rickroll(args) {
-  return args.MENU;
+  var menu = args.MENU;
+  if (menu = 'Women') {
+  return 'No Women?';
+  } else if (menu = 'A Perfect Person') {
+  return 'No bodie\'\s perfect kid.';
+  } else if (menu = 'A Celebrity Near You') {
+  return 'No one\'\s there to sign your autograph :('
+  } else if (menu = 'Minecraft for Free') {
+  return 'Stop being a pirate MaTeY!';
+  } else if (menu = 'Free Robux') {
+  return 'Scams. Scams Everywhere.';
+  }
   }
 }
 
