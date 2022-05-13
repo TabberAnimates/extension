@@ -196,7 +196,7 @@ class CoolExtension {
         },
         {
         opcode: 'pi',
-        blockType: Scratch.BlockType.COMMAND,
+        blockType: Scratch.BlockType.REPORTER,
         text: 'pi',
         }
     ],
