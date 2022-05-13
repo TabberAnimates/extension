@@ -258,7 +258,7 @@ if (w == 9) {
     return fetch(fetcherurl).then(response => response.text());
   }
   ifReport(args) {
-    return (args.ONE ? 'args.TWO' : 'args.THREE');
+    return (args.ONE ? args.TWO : args.THREE);
   }
   typeOf(args) {
   return typeof args.ONE;
