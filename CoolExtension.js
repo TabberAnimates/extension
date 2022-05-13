@@ -193,6 +193,11 @@ class CoolExtension {
         menu: 'rickMenu'
         }
         }
+        },
+        {
+        opcode: 'pi',
+        blockType: Scratch.BlockType.COMMAND,
+        text: 'pi',
         }
     ],
       menus: {
@@ -277,6 +282,9 @@ if (w == 9) {
   rickroll(args) {
   var menu = args.MENU;
   return 'false';
+  }
+  pi() {
+  return Math.PI;
   }
 }
 
