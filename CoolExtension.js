@@ -17,7 +17,7 @@ class CoolExtension {
         {
           opcode: 'strictlyEquals',
           blockType: Scratch.BlockType.REPORTER,
-          text: '[ONE] to the power of [TWO]',
+          text: '[ONE] ^ [TWO]',
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.NUMBER,
@@ -73,6 +73,19 @@ class CoolExtension {
               TWO: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: '0'
+            }
+          }
+        },
+        {
+          opcode: 'xor',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: '[ONE] xor [TWO]',
+          arguments: {
+            ONE: {
+            type: Scratch.ArgumentType.BOOLEAN,
+            },
+            TWO: {
+            type: Scratch.ArgumentType.BOOLEAN,
             }
           }
         },
@@ -281,6 +294,9 @@ if (w == 9) {
   }
   pi() {
   return Math.PI;
+  }
+  xor(args) {
+  return !(args.ONE || args.TWO);
   }
 }
 
