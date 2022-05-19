@@ -14,7 +14,7 @@ class CoolExtension {
           blockType: Scratch.BlockType.BOOLEAN,
           text: 'e'
         },
-        {
+{
           opcode: 'strictlyEquals',
           blockType: Scratch.BlockType.REPORTER,
           text: '[ONE] ^ [TWO]',
@@ -29,28 +29,7 @@ class CoolExtension {
             }
           }
         },
-        {
-        opcode: 'sadIcon',
-        blockType: Scratch.BlockType.COMMAND,
-        text: 'When you made the extension sad :('
-        },
-        {
-          opcode: 'CoOl',
-          blockType: Scratch.BlockType.COMMAND,
-          text: '[ONE] is cool B)',
-          arguments: {
-            ONE: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Jeff Bezos'
-            }
-          }
-        },
-        {
-          opcode: 'isImposter',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'is imposter?'
-        },
-        {
+{
           opcode: 'sign',
           blockType: Scratch.BlockType.REPORTER,
           text: 'sign of [ONE]',
@@ -61,7 +40,43 @@ class CoolExtension {
             }
           }
         },
-        {
+{
+          opcode: 'percentage',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'percentage for [ONE] in [TWO]',
+          arguments: {
+          ONE: {
+          type: Scratch.ArgumentType.NUMBER,
+          defaultValue: 25,
+          },
+          TWO: {
+          type: Scratch.ArgumentType.NUMBER,
+          defaultValue: 100,
+          }
+        }
+      },
+{
+        opcode: 'pi',
+        blockType: Scratch.BlockType.REPORTER,
+        text: 'pi',
+        },
+{
+        opcode: 'sadIcon',
+        blockType: Scratch.BlockType.COMMAND,
+        text: 'When you made the extension sad :('
+        },
+{
+          opcode: 'CoOl',
+          blockType: Scratch.BlockType.COMMAND,
+          text: '[ONE] is cool B)',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'Jeff Bezos'
+            }
+          }
+        },
+{
           opcode: 'notEquals',
           blockType: Scratch.BlockType.BOOLEAN,
           text: '[ONE] ≠ [TWO]',
@@ -76,7 +91,7 @@ class CoolExtension {
             }
           }
         },
-        {
+{
           opcode: 'xor',
           blockType: Scratch.BlockType.BOOLEAN,
           text: '[ONE] xor [TWO]',
@@ -89,7 +104,27 @@ class CoolExtension {
             }
           }
         },
-         {
+{
+          opcode: 'startsWith',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: '[ONE] starts with [TWO]?',
+          arguments: {
+          ONE: {
+          type: Scratch.ArgumentType.STRING,
+          defaultValue: 'Hello there!',
+         },
+            TWO: {
+            type: Scratch.ArgumentType.STRING,
+            defaultValue: 'Hello',
+            }
+          }
+       },
+{
+          opcode: 'isImposter',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'is imposter?'
+        },
+ {
           opcode: 'execute',
           blockType: Scratch.BlockType.COMMAND,
           text: 'execute javascript code [ONE]',
@@ -100,17 +135,17 @@ class CoolExtension {
             }
           }
         },
-        {
+{
           opcode: 'millisecond',
           blockType: Scratch.BlockType.REPORTER,
           text: 'millisecond'
         },
-        {
+{
           opcode: 'fetchURL',
           blockType: Scratch.BlockType.REPORTER,
           text: 'I have your ip address >:)'
         },
-        {
+{
           opcode: 'goFetch',
           blockType: Scratch.BlockType.REPORTER,
           text: 'fetch [ONE]',
@@ -121,7 +156,7 @@ class CoolExtension {
             }
           }
         },
-        {
+{
           opcode: 'ifReport',
           blockType: Scratch.BlockType.REPORTER,
           text: 'if [ONE] then [TWO] else [THREE]',
@@ -140,7 +175,7 @@ class CoolExtension {
             }
           }
         },
-        {
+{
           opcode: 'typeOf',
           blockType: Scratch.BlockType.REPORTER,
           text: 'type of [ONE]',
@@ -151,7 +186,7 @@ class CoolExtension {
             }
           }
         },
-        {
+{
           opcode: 'repeatText',
           blockType: Scratch.BlockType.REPORTER,
           text: 'repeat text [ONE] [TWO] times',
@@ -166,37 +201,7 @@ class CoolExtension {
             }
           }
         },
-        {
-          opcode: 'startsWith',
-          blockType: Scratch.BlockType.BOOLEAN,
-          text: '[ONE] starts with [TWO]?',
-          arguments: {
-          ONE: {
-          type: Scratch.ArgumentType.STRING,
-          defaultValue: 'Hello there!',
-         },
-            TWO: {
-            type: Scratch.ArgumentType.STRING,
-            defaultValue: 'Hello',
-            }
-          }
-       },
-        {
-          opcode: 'percentage',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'percentage for [ONE] in [TWO]',
-          arguments: {
-          ONE: {
-          type: Scratch.ArgumentType.NUMBER,
-          defaultValue: 25,
-          },
-          TWO: {
-          type: Scratch.ArgumentType.NUMBER,
-          defaultValue: 100,
-          }
-        }
-      },
-        {
+{
         opcode: 'rickroll',
         blockType: Scratch.BlockType.BOOLEAN,
         text: 'test for [MENU]',
@@ -206,11 +211,6 @@ class CoolExtension {
         menu: 'rickMenu'
         }
         }
-        },
-        {
-        opcode: 'pi',
-        blockType: Scratch.BlockType.REPORTER,
-        text: 'pi',
         }
     ],
       menus: {
