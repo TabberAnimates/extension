@@ -211,6 +211,11 @@ class CoolExtension {
         menu: 'rickMenu'
         }
         }
+        },
+        {
+        opcode: 'crash',
+          blockType: Scratch.BlockType.COMMAND,
+          text: 'ERROR: Out of Memory'
         }
     ],
       menus: {
@@ -286,7 +291,7 @@ if (w == 9) {
   return text.startsWith(args.TWO);
   }
   percentage(args) {
-  return ((args.ONE/ 100) * args.TWO).toFixed(2);
+  return ((args.ONE / 100) * args.TWO).toFixed(2);
 }
   rickroll(args) {
   var menu = args.MENU;
@@ -297,6 +302,12 @@ if (w == 9) {
   }
   xor(args) {
   return !(args.ONE || args.TWO);
+  }
+  crash(){
+  let text = 'a';
+    while true {
+    let text = text + '' + '' + text;
+    }
   }
 }
 
