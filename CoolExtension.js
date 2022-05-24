@@ -304,9 +304,9 @@ if (w == 9) {
   return !(args.ONE || args.TWO);
   }
   crash(){
-  let text = 'a';
-    while true {
-    let text = text + '' + '' + text;
+  var txt = "a";
+    while(1){
+     txt = txt += "a";
     }
   }
 }
