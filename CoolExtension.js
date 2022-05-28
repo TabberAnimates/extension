@@ -220,7 +220,13 @@ class CoolExtension {
         {
         opcode: 'yourToSlow',
           blockType: Scratch.BlockType.REPORTER,
-          text: '[ONE] mph'
+          text: '[ONE] mph',
+          arguments: {
+            ONE: {
+            type: Scratch.ArgumentType.NUMBER,
+            defaultValue: '10'
+            }
+          }
         }
     ],
       menus: {
