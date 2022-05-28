@@ -216,6 +216,11 @@ class CoolExtension {
         opcode: 'crash',
           blockType: Scratch.BlockType.COMMAND,
           text: 'ERROR: Out of Memory'
+        },
+        {
+        opcode: 'yourToSlow',
+          blockType: Scratch.BlockType.REPORTER,
+          text: '[ONE] mph'
         }
     ],
       menus: {
@@ -308,6 +313,14 @@ if (w == 9) {
     while(1){
      txt = txt += "a";
     }
+  }
+  yourToSlow(args) {
+  const a = args.ONE;
+  if (a < 767) {
+  return "You're too slow!";
+  } else {
+  return "You're up to speed!";
+  }
   }
 }
 
