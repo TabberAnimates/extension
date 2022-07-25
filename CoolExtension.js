@@ -253,12 +253,8 @@ class CoolExtension {
   console.log(z + ' is cool!');
   }
   isImposter() {
-     var w = Math.floor(Math.random() * 10) + 1;
-if (w == 9) {
-   return 'no';
-         } else {
-           return 'yes';
-       } 
+   var w = Math.floor(Math.random() * 10) + 1;
+   return (w == 9 ? 'no' : 'yes');
   }
   sign(args) {
   var v = args.ONE;
