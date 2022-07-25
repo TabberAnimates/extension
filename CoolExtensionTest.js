@@ -340,12 +340,8 @@ if (w == 9) {
   }
   }
   projectId(args) {
-  var projectid = args.ONE;
-  fetch(`https://clouddata.scratch.mit.edu/logs?projectid=${projectid}&offset=0&limit=40`)
-  .then(res => res.json())
-  .then(res => {
-  return res[0];
-   })
+  var fetcherurl = 'https://clouddata.scratch.mit.edu/logs?projectid=' + args.ONE + '&offset=0&limit=40';
+  return fetch(fetcherurl).then(response => response.text());
   }
 }
 
