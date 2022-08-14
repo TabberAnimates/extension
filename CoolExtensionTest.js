@@ -238,6 +238,21 @@ class CoolExtension {
           defaultValue: '716896214'
           }
           }
+        },
+        {
+        opcode: 'timeConvert',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'years since [ONE] in period [TWO]',
+          agruments: {
+          ONE: {
+          type: Scratch.ArgumentType.NUMBER,
+            defaultValue: '1787'
+          },
+            TWO: {
+            type: Scratch.ArgumentType.STRING,
+              defaultValue: 'ad'
+            }
+          }
         }
     ],
       menus: {
@@ -338,6 +353,14 @@ class CoolExtension {
   projectId(args) {
   var fetcherurl = 'https://clouddata.scratch.mit.edu/logs?projectid=' + args.ONE + '&offset=0&limit=40';
   return fetch(fetcherurl).then(response => response.text());
+  }
+  timeConvert(args) {
+  let year = Date.getFullYear();
+  if (args.TWO = 'ad') {
+  return (year - args.ONE);
+  } else if (args.TWO = 'bc') {
+  return (year + args.ONE);
+  }
   }
 }
 
