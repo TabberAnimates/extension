@@ -243,15 +243,15 @@ class CoolExtension {
         opcode: 'timeConvert',
           blockType: Scratch.BlockType.REPORTER,
           text: 'years since [ONE] in period [TWO]',
-          agruments: {
+          arguments: {
           ONE: {
           type: Scratch.ArgumentType.NUMBER,
           defaultValue: '1787'
           },
-            TWO: {
-            type: Scratch.ArgumentType.STRING,
-            defaultValue: 'ad'
-            }
+          TWO: {
+          type: Scratch.ArgumentType.STRING,
+          defaultValue: 'ad'
+          }
           }
         }
     ],
