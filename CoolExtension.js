@@ -227,6 +227,21 @@ class CoolExtension {
             defaultValue: '10'
             }
           }
+        },
+        {
+        opcode: 'timeConvert',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'years since [ONE] in period [TWO]',
+          arguments: {
+          ONE: {
+          type: Scratch.ArgumentType.NUMBER,
+          defaultValue: '1787'
+          },
+          TWO: {
+          type: Scratch.ArgumentType.STRING,
+          defaultValue: 'ad'
+          }
+          }
         }
     ],
       menus: {
@@ -322,6 +337,15 @@ class CoolExtension {
   return "You're too slow!";
   } else {
   return "You're up to speed!";
+  }
+  }
+  timeConvert(args) {
+  let year = new Date().getFullYear();
+  if (args.TWO == 'ad') {
+  return (year - args.ONE);
+  } else if (args.TWO == 'bc') {
+  let math = year + args.ONE;
+  return math;
   }
   }
 }
