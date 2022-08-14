@@ -355,10 +355,10 @@ class CoolExtension {
   return fetch(fetcherurl).then(response => response.text());
   }
   timeConvert(args) {
-  let year = Date.getFullYear();
-  if (args.TWO = 'ad') {
+  let year = new Date().getFullYear();
+  if (args.TWO == 'ad') {
   return (year - args.ONE);
-  } else if (args.TWO = 'bc') {
+  } else if (args.TWO == 'bc') {
   return (year + args.ONE);
   }
   }
