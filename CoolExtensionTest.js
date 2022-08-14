@@ -246,11 +246,11 @@ class CoolExtension {
           agruments: {
           ONE: {
           type: Scratch.ArgumentType.NUMBER,
-            defaultValue: '1787'
+          defaultValue: '1787'
           },
             TWO: {
             type: Scratch.ArgumentType.STRING,
-              defaultValue: 'ad'
+            defaultValue: 'ad'
             }
           }
         }
