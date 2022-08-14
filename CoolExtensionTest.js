@@ -359,7 +359,8 @@ class CoolExtension {
   if (args.TWO == 'ad') {
   return (year - args.ONE);
   } else if (args.TWO == 'bc') {
-  return (year + args.ONE);
+  let math = year + args.ONE;
+  return math;
   }
   }
 }
